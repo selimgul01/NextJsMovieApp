@@ -1,5 +1,5 @@
 "use client"
-import { Suspense } from "react";
+
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import React from 'react'
@@ -25,7 +25,7 @@ const Tabs = () => {
     ]
 
   return (
-      <Suspense>
+      
     <div className='flex items-center justify-center gap-10 p-5 m-5 bg-gray-100 dark:bg-gray-800'>
       {
         tabs.map((tab,i)=>(
@@ -33,7 +33,7 @@ const Tabs = () => {
         ))
       }
     </div>
-          </Suspense>
+          
   )
 }
 
